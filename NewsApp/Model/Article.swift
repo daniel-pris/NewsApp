@@ -33,6 +33,30 @@ struct Article {
     
 }
 
+extension Article: Codable {}
+extension Article: Equatable {}
+extension Article: Identifiable {
+    var id: String { url }
+}
+
+extension Article {
+    static var previewData: [Article] {
+        let  previewDataURL = Bundle.main.url(forResource: "news", withExtension: "json")!
+        let data = try! Data(contentsOf: previewDataURL)
+        
+        let jsonDecoder = JSONDecoder()
+        jsonDecoder.dateDecodingStrategy = .iso8601
+        
+        let apiResponse = try! jsonDecoder.decode(NewsAPIResponse.self, from: data)
+        return apiResponse.articles ?? []
+        
+    }
+}
+
 struct Source {
     let name: String
 }
+
+extension Source: Codable {}
+extension Source: Equatable {}
+
