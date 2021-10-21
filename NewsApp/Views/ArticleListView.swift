@@ -20,12 +20,15 @@ struct ArticleListView: View {
         .listStyle(.plain)
         .sheet(item: $selectedArticle) {
             SafariView(url: $0.articleURL)
+                .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
 
 struct ArticleListView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleListView(articles: Article.previewData)
+        NavigationView {
+            ArticleListView(articles: Article.previewData)
+        }
     }
 }
