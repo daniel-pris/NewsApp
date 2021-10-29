@@ -3,6 +3,8 @@ import SwiftUI
 
 struct ArticleRowView: View {
     
+    @EnvironmentObject var articleBookmarkVM: ArticleBookmarkViewModel
+    
     let article: Article
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -51,9 +53,9 @@ struct ArticleRowView: View {
                     Spacer()
                     
                     Button {
-                        
+                        toggleBookmark(for: article)
                     } label: {
-                        Image(systemName: "bookmark")
+                        Image(systemName: articleBookmarkVM.isBookmark(for: article) ? "bookmark.fill" : "bookmark")
                     }
                     .buttonStyle(.bordered)
                     
@@ -70,6 +72,15 @@ struct ArticleRowView: View {
             
         }
     }
+    
+    private func toggleBookmark(for article: Article) {
+        if articleBookmarkVM.isBookmark(for: article) {
+            articleBookmarkVM.removeBookmark(for: article)
+        } else {
+            articleBookmarkVM.addBookmark(for: article)
+        }
+    }
+    
 }
 
 extension View {
@@ -88,6 +99,9 @@ extension View {
 }
 
 struct ArticleRowView_Previews: PreviewProvider {
+    
+    @StateObject static var articleBookmarkVM = ArticleBookmarkViewModel()
+
     static var previews: some View {
         NavigationView {
             List {
@@ -96,6 +110,7 @@ struct ArticleRowView_Previews: PreviewProvider {
             }
             .listStyle(.plain)
         }
+        .environmentObject(articleBookmarkVM)
         
     }
     

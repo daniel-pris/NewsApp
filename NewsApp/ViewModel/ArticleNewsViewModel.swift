@@ -33,17 +33,20 @@ class ArticleNewsViewModel: ObservableObject {
     
     
     func loadArticles() async {
-        phase = .empty
         
-        do {
-            let articles = try await newsAPI.fetch(from: fetchTaskToken.category)
-            phase = .success(articles)
-        } catch {
-            phase = .failrule(error)
-        }
+        if Task.isCancelled { return }
+        phase = .success(Article.previewData)
+//        phase = .empty
+//        do {
+//            let articles = try await newsAPI.fetch(from: fetchTaskToken.category)
+//            if Task.isCancelled { return }
+//            phase = .success(articles)
+//        } catch {
+//            if Task.isCancelled { return }
+//            phase = .failrule(error)
+//        }
         
     }
-    
     
 }
 
