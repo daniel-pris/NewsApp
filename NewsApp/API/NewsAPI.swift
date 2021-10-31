@@ -17,7 +17,14 @@ struct NewsAPI {
     }()
     
     func fetch(from category: Category) async throws -> [Article] {
-        let url = generateNewsURL(from: category)
+        try await fecthArticles(from: generateNewsURL(from: category))
+    }
+ 
+    func search(for query: String) async throws -> [Article] {
+        try await fecthArticles(from: generateSearchURL(from: query))
+    }
+    
+    private func fecthArticles(from url: URL) async throws -> [Article] {
         let (data, response) = try await session.data(from: url)
         
         
@@ -37,12 +44,20 @@ struct NewsAPI {
             throw generateError(description: "A server error occured")
         }
     }
- 
     
     private func generateError(code: Int = 1, description: String) -> Error {
         NSError(domain: "NesAPI", code: code, userInfo: [NSLocalizedDescriptionKey: description])
     }
     
+    private func generateSearchURL(from query: String) -> URL {
+        let precentEncodedString = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? query
+        
+        var url = "http://newsapi.org/v2/evegything?"
+        url += "apiKey=\(apiKey)"
+        url += "&language=en"
+        url += "&q=\(precentEncodedString)"
+        return URL(string: url)!
+    }
     
     private func generateNewsURL(from category: Category) -> URL {
         var url = "http://newsapi.org/v2/top-headlines?"
