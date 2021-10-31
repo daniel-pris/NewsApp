@@ -71,14 +71,14 @@ class ArticleSearchViewModel: ObservableObject {
     }
     
     private func load() {
-        async {
+        Task {
             self.history = await historyDataStore.load() ?? []
         }
     }
  
     private func historiesUpdated() {
         let history = self.history
-        async {
+        Task {
             await historyDataStore.save(history)
         }
         

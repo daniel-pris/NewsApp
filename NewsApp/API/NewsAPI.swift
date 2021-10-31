@@ -6,7 +6,7 @@ struct NewsAPI {
     
     static let shared = NewsAPI()
     private init() {}
-    
+//                          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     private let apiKey = "f58de38396244a6eb63b9890a6903170"
     private let session = URLSession.shared
     
@@ -52,7 +52,7 @@ struct NewsAPI {
     private func generateSearchURL(from query: String) -> URL {
         let precentEncodedString = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? query
         
-        var url = "http://newsapi.org/v2/evegything?"
+        var url = "http://newsapi.org/v2/everything?"
         url += "apiKey=\(apiKey)"
         url += "&language=en"
         url += "&q=\(precentEncodedString)"

@@ -55,7 +55,7 @@ struct NewsTabView: View {
                 }
             }
         } label: {
-            Image(systemName: "fiberchannel")
+            Image(systemName: "checklist")
                 .imageScale(.large)
         }
     }
