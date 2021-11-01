@@ -1,3 +1,3 @@
 # NewsApp
 IOS News Application 
-![](newsa.jpg)
+![](na.jpg)
