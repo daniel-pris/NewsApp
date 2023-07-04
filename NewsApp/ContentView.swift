@@ -1,8 +1,3 @@
-//
-//  NewsApp
-//
-//  Created by DaninMac on 14.10.21.
-//
 
 import SwiftUI
 
@@ -17,6 +12,10 @@ struct ContentView: View {
             SearchTabView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
+                }
+            CountryTableView()
+                .tabItem {
+                    Label("List", systemImage: "iphone.circle")
                 }
             
             BookmarkTabView()

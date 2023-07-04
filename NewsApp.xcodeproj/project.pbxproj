@@ -15,6 +15,9 @@
 		EB0E991E272AD21C00927C22 /* RetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0E991D272AD21C00927C22 /* RetryView.swift */; };
 		EB1E6D2A271AE03300164D7D /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E6D29271AE03300164D7D /* ArticleRowView.swift */; };
 		EB237717272D2F8B00714A57 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB237716272D2F8B00714A57 /* SearchTabView.swift */; };
+		EB3C4E452A0CDF43007B4929 /* Iphones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C4E442A0CDF43007B4929 /* Iphones.swift */; };
+		EB3C4E472A0CDF90007B4929 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C4E462A0CDF90007B4929 /* Details.swift */; };
+		EB3C4E492A0CDFD8007B4929 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C4E482A0CDFD8007B4929 /* TableView.swift */; };
 		EB4E5BAB27198C3B00AAE20A /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E5BAA27198C3B00AAE20A /* NewsAPIResponse.swift */; };
 		EB7CB5A1271EFDA5007FA5C6 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7CB5A0271EFDA5007FA5C6 /* ArticleListView.swift */; };
 		EB7CB5A3271F00CF007FA5C6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7CB5A2271F00CF007FA5C6 /* SafariView.swift */; };
@@ -26,7 +29,6 @@
 		EBF19BA6271894D600E9FE9E /* NewsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF19BA5271894D600E9FE9E /* NewsAppApp.swift */; };
 		EBF19BA8271894D600E9FE9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF19BA7271894D600E9FE9E /* ContentView.swift */; };
 		EBF19BAA271894DB00E9FE9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF19BA9271894DB00E9FE9E /* Assets.xcassets */; };
-		EBF19BAD271894DB00E9FE9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF19BAC271894DB00E9FE9E /* Preview Assets.xcassets */; };
 		EBF19BB42718973800E9FE9E /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = EBF19BB32718973800E9FE9E /* news.json */; };
 		EBF19BB7271899E200E9FE9E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF19BB6271899E200E9FE9E /* Article.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,9 @@
 		EB1E6D29271AE03300164D7D /* ArticleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRowView.swift; sourceTree = "<group>"; };
 		EB1E6D2B271AEBFD00164D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB237716272D2F8B00714A57 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
+		EB3C4E442A0CDF43007B4929 /* Iphones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iphones.swift; sourceTree = "<group>"; };
+		EB3C4E462A0CDF90007B4929 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		EB3C4E482A0CDFD8007B4929 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		EB4E5BAA27198C3B00AAE20A /* NewsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIResponse.swift; sourceTree = "<group>"; };
 		EB7CB5A0271EFDA5007FA5C6 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		EB7CB5A2271F00CF007FA5C6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
@@ -53,7 +58,6 @@
 		EBF19BA5271894D600E9FE9E /* NewsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppApp.swift; sourceTree = "<group>"; };
 		EBF19BA7271894D600E9FE9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBF19BA9271894DB00E9FE9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBF19BAC271894DB00E9FE9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBF19BB32718973800E9FE9E /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		EBF19BB6271899E200E9FE9E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 				EBABFFC3272C067A0055B5DD /* BookmarkTabView.swift */,
 				EB237716272D2F8B00714A57 /* SearchTabView.swift */,
 				EBA99560272D5A8E00C3B527 /* SearchHistoryListView.swift */,
+				EB3C4E462A0CDF90007B4929 /* Details.swift */,
+				EB3C4E482A0CDFD8007B4929 /* TableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,19 +136,11 @@
 				EBF19BA5271894D600E9FE9E /* NewsAppApp.swift */,
 				EBF19BA7271894D600E9FE9E /* ContentView.swift */,
 				EBF19BA9271894DB00E9FE9E /* Assets.xcassets */,
-				EBF19BAB271894DB00E9FE9E /* Preview Content */,
 				EBF19BB32718973800E9FE9E /* news.json */,
 			);
-			path = NewsApp;
-			sourceTree = "<group>";
-		};
-		EBF19BAB271894DB00E9FE9E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				EBF19BAC271894DB00E9FE9E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
+			name = NewsApp;
+			path = /Users/daninmac/Desktop/NewsApp/NewsApp;
+			sourceTree = "<absolute>";
 		};
 		EBF19BB5271898E100E9FE9E /* Model */ = {
 			isa = PBXGroup;
@@ -151,6 +149,7 @@
 				EB4E5BAA27198C3B00AAE20A /* NewsAPIResponse.swift */,
 				EB0E99142728386D00927C22 /* Category.swift */,
 				EBABFFC5272C09730055B5DD /* DataStore.swift */,
+				EB3C4E442A0CDF43007B4929 /* Iphones.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF19BB42718973800E9FE9E /* news.json in Resources */,
-				EBF19BAD271894DB00E9FE9E /* Preview Assets.xcassets in Resources */,
 				EBF19BAA271894DB00E9FE9E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,15 +230,18 @@
 				EB1E6D2A271AE03300164D7D /* ArticleRowView.swift in Sources */,
 				EBF19BA6271894D600E9FE9E /* NewsAppApp.swift in Sources */,
 				EBA99561272D5A8E00C3B527 /* SearchHistoryListView.swift in Sources */,
+				EB3C4E472A0CDF90007B4929 /* Details.swift in Sources */,
 				EB0E991E272AD21C00927C22 /* RetryView.swift in Sources */,
 				EB4E5BAB27198C3B00AAE20A /* NewsAPIResponse.swift in Sources */,
 				EB0E99152728386D00927C22 /* Category.swift in Sources */,
 				EB237717272D2F8B00714A57 /* SearchTabView.swift in Sources */,
 				EBABFFC8272C25770055B5DD /* ArticleSearchViewModel.swift in Sources */,
+				EB3C4E492A0CDFD8007B4929 /* TableView.swift in Sources */,
 				EB0E991C272AD0C600927C22 /* EmptyPlaceholderview.swift in Sources */,
 				EB0E99182729836700927C22 /* ArticleNewsViewModel.swift in Sources */,
 				EBABFFC2272BF6D00055B5DD /* ArticleBookmarkViewModel.swift in Sources */,
 				EB0E991A272AC82600927C22 /* NewsTabView.swift in Sources */,
+				EB3C4E452A0CDF43007B4929 /* Iphones.swift in Sources */,
 				EBF19BB7271899E200E9FE9E /* Article.swift in Sources */,
 				EB7CB5A3271F00CF007FA5C6 /* SafariView.swift in Sources */,
 				EB0E9913272836AD00927C22 /* NewsAPI.swift in Sources */,
@@ -374,7 +375,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NewsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
@@ -405,7 +405,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NewsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;

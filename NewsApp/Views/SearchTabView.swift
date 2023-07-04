@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct SearchTabView: View {
@@ -40,7 +39,7 @@ struct SearchTabView: View {
                     
                 }
             } else {
-                EmptyPlaceholderView(text: "Type your query to search from NewsAPI", image: Image(systemName: "magnifyingglass"))
+                EmptyPlaceholderView(text: "Type your query to search", image: Image(systemName: "magnifyingglass"))
             }
             
         case . success(let articles) where articles.isEmpty:
@@ -55,7 +54,7 @@ struct SearchTabView: View {
     
     @ViewBuilder
     private var suggestationView: some View {
-        ForEach(["SwiftUI", "am i beauty", "Covid-19", "IOS 15"], id:\.self) { text in
+        ForEach(["Iphone X", "A8", "Iphome 13 pro", "IOS 15"], id:\.self) { text in
             Button {
                 searchVM.searchQuery = text
             } label: {

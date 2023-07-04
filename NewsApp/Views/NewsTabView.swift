@@ -42,7 +42,7 @@ struct NewsTabView: View {
             await articleNewsVM.loadArticles()
     }
     
-    @Sendable
+    
     private func refreshTask() {
         articleNewsVM.fetchTaskToken = FetchTaskToken(category: articleNewsVM.fetchTaskToken.category, token: Date())
     }
